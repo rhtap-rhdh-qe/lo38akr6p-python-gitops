@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: lo38akr6p-python-gitops
+  description: This is GitOps manifest for lo38akr6p-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: lo38akr6p-python
+    janus-idp.io/tekton: lo38akr6p-python 
+    backstage.io/kubernetes-id: lo38akr6p-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:lo38akr6p-python

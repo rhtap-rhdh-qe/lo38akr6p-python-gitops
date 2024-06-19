@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: lo38akr6p-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/lo38akr6p-python
